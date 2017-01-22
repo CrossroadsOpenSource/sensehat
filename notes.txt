@@ -1,1 +1,8 @@
 https://www.raspberrypi.org/blog/sense-hat-emulator/
+
+Here is the /etc/crontab entry:
+*/10 *  * * *   root    python3 /home/pi/Documents/Python/logtemperature.py
+ ^                ^        ^- command              ^-- arguments
+ |                 |
+ |                 - run as root
+ |- every 10 minutes 
